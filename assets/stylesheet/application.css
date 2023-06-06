@@ -1,0 +1,299 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSans-Light.ttf");
+  font-weight: 300;
+}
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 46px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 26px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  font-family: "NotoSans";
+  color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "NotoSans";
+}
+
+.content-box {
+  max-width: 1200px;
+  padding: 20px 15px;
+  margin: auto;
+}
+
+p {
+  font-size: 14px;
+  color: #777;
+  padding: 10px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ff9b00;
+}
+
+.action {
+  color: #ffffff;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 0px 10px;
+}
+
+.header {
+  font-weight: 400;
+  background-color: #ff9b00;
+}
+.header .content .header-info {
+  text-align: center;
+}
+.header .content .header-info span {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.main-nav .main-nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.main-nav .main-nav-content .logo img {
+  height: 40px;
+}
+.main-nav .main-nav-content .nav a {
+  padding: 0 10px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.main-nav .main-nav-content .action i {
+  font-size: 20px;
+  color: #2db6a3;
+  padding: 0 10px;
+}
+
+.banner {
+  background-image: url("../images/cover1.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 550px;
+}
+
+.search {
+  background-color: #fafafa;
+  padding: 25px 0px;
+}
+.search .search-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "NotoSans";
+}
+.search .search-content .search-box {
+  position: relative;
+}
+.search .search-content .search-box input {
+  min-width: 500px;
+  height: 50px;
+  border-radius: 40px;
+}
+.search .search-content .search-box button {
+  position: absolute;
+  border: none;
+  background-color: #ff9b00;
+  right: 0;
+  height: 100%;
+  border-radius: 0px 40px 40px 0px;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.main-content .sidebar {
+  margin-left: 15px;
+}
+.main-content .sidebar .filter-item {
+  margin-top: 10px;
+}
+.main-content .sidebar .filter-item .title {
+  font-weight: 600;
+  padding: 5px 10px;
+  position: relative;
+}
+.main-content .sidebar .filter-item .title::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 3px;
+  left: 3px;
+  background-color: #ff9b00;
+}
+.main-content .sidebar .filter-item .item-list {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+.main-content .sidebar .filter-item .item-list .item {
+  padding: 10px 5px;
+  border-bottom: 1px solid #e7e7e7;
+}
+.main-content .sidebar .filter-item .item-list .item a {
+  color: #000000;
+}
+.main-content .sidebar .filter-item .item-list .item a:hover {
+  color: #ff9b00;
+  transition: color 0.5s;
+}
+
+.products {
+  margin: 15px auto;
+}
+.products .product {
+  display: grid;
+  grid-template-columns: repeat(5, 220px);
+  gap: 15px;
+}
+.products .product .cart {
+  padding: 15px 10px;
+  background-color: #fafafa;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  text-align: center;
+}
+.products .product .cart .image {
+  width: 200px;
+  height: 200px;
+}
+.products .product .cart .image img {
+  height: auto;
+  width: auto;
+}
+.products .product .cart .image img:hover {
+  scale: 1.1;
+}
+.products .product .cart .title, .products .product .cart .price {
+  text-align: center;
+}
+.products .product .cart .title span {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.products .product .cart .price {
+  font-size: 14px;
+  font-weight: 700;
+}
+.products .product .cart .action {
+  margin-top: 10px;
+  background-color: #ff9b00;
+  cursor: pointer;
+}
+.products .product .cart .action i {
+  margin-right: 5px;
+}
+.products .product .cart .action:hover {
+  scale: 1.05;
+}
+
+.footer {
+  background-color: #ff9b00;
+}
+.footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.footer .footer-content .social-media i {
+  color: #ffffff;
+  margin: 0 10px;
+  font-size: 24px;
+}
+.footer .footer-content .pages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(0, auto);
+  gap: 10px;
+}
+.footer .footer-content .pages a {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 5px;
+}
+.footer .footer-content .pages a::nth-child(n+4) {
+  grid-column: 1/span 3;
+}/*# sourceMappingURL=application.css.map */

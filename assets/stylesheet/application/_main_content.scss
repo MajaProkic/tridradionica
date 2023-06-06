@@ -1,0 +1,117 @@
+.search {
+ background-color: $light-gray;
+ padding: 25px 0px;
+  .search-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: $primary-font;
+    .search-box { 
+      position: relative;
+      input {
+        min-width: 500px;
+        height: 50px;
+        border-radius: 40px;
+      }
+      button {
+        position: absolute;
+        border: none;
+        background-color: $primary-color;
+        right: 0;
+        height: 100%;
+        border-radius: 0px 40px 40px 0px;
+        padding: 15px;
+        color: $white;
+      }
+    }
+  }
+}
+.main-content { 
+  display: grid;
+  grid-template-columns: 20% 80%;
+  .sidebar {
+    margin-left: 15px;
+    .filter-item { 
+      margin-top: 10px;
+      .title {
+        font-weight: 600;
+        padding: 5px 10px;
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          height: 20px;
+          width: 3px;
+          left: 3px;
+          background-color: $primary-color;
+        }
+      }
+      .item-list {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        .item {
+          padding: 10px 5px;
+          border-bottom: 1px solid $border-color;
+          a {
+            color: $dark;
+            &:hover {
+              color: $primary-color;
+              transition: color 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.products {
+  margin: 15px auto; 
+  .product {
+    display: grid;
+    grid-template-columns: repeat(5,220px);
+    gap: 15px;
+    .cart {
+      padding: 15px 10px;
+      background-color: $light-gray;
+      border-radius: 5px;
+      box-shadow: 0 2px 2px rgba($color: $dark, $alpha: 0.2);
+      cursor: pointer;
+      text-align: center;
+
+      .image {
+        width: 200px;
+        height: 200px;
+        img { 
+          height: auto;
+          width: auto;
+          &:hover {
+            scale: 1.1;
+          }
+        }
+      }
+      .title, .price { text-align: center; }
+      .title { 
+        span  { 
+          font-size: 16px;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+        }
+      }
+      .price { 
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .action { 
+        margin-top: 10px;
+        background-color: $primary-color;
+        cursor: pointer;
+        i { margin-right: 5px; }
+        &:hover{
+          scale: 1.05;
+        }
+      }
+    }
+  }
+}

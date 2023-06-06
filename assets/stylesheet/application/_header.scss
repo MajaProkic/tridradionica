@@ -1,0 +1,41 @@
+.header {
+  font-weight: 400;
+  background-color: $primary-color;
+  .content {
+    .header-info {
+      text-align: center;
+      span { 
+        color: $white;
+        font-size: 14px;
+        letter-spacing: .5px;
+      }
+    }
+  }
+}
+.main-nav {
+  .main-nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    .logo {
+      img {height: 40px; }
+    }
+    .nav {
+      a { 
+        padding: 0 10px;
+        color: $primary-text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+      }
+    }
+    .action {
+      i { 
+        font-size: 20px;
+        color: $secondary-color;
+        padding: 0 10px;
+      }
+    }
+  }
+}
